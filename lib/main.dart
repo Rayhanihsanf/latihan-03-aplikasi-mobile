@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.black,
+          seedColor: Colors.blue,
         ),
       ),
       home: const HomePage(),
@@ -29,18 +29,39 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlueAccent,
       appBar: AppBar(
-        title: const Text('Flutter Latihan'),
+        backgroundColor: Colors.blue,
+        leading: Icon(Icons.home, color: Colors.white,),
+        title: const Center(child: Text(
+          'Flutter Latihan',
+          style: TextStyle(
+            color: Colors.black,
+          ),),),
+        actions: [Icon(Icons.search, color: Colors.white,)],
       ),
       body: const Center(
-        child: Text(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
           'Hello World',
           style: TextStyle(
+            color: Colors.white,
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            backgroundColor: Colors.lightBlue,
           ),
         ),
+        SizedBox(height: 10,),
+
+        Text(
+          'Selamat Datang',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        )
+        ],)
       ),
     );
   }
