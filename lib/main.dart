@@ -51,16 +51,7 @@ class HomePage extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(height: 10,),
-
-        Text(
-          'Selamat Datang',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
-        )
+        
         ],)
       ),
     );
