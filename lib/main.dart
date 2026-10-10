@@ -12,12 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Latihan',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
-        ),
-      ),
       home: const HomePage(),
     );
   }
@@ -34,7 +28,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.blue,
         leading: Icon(Icons.home, color: Colors.white,),
         title: const Center(child: Text(
-          'Flutter Latihan',
+          'Latihan Flutter',
           style: TextStyle(
             color: Colors.black,
           ),),),
@@ -43,23 +37,42 @@ class HomePage extends StatelessWidget {
       body: const Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-          'Hello World',
+          Card(
+            color: Colors.purpleAccent,
+            child:Text(
+          'Hello...',
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
         ),
+        ),  
         SizedBox(height: 10,),
 
-        Text(
+        Card(
+          color: Colors.purpleAccent,
+          child: Text(
           'Selamat Datang',
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
+        ),
+        ),
+        SizedBox(height: 8,),
+
+        Card(
+          color: Colors.purpleAccent,
+          child: Text(
+          'Rayhan Ihsan F - 11226180062',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         )
         ],)
       ),
